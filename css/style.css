@@ -1,0 +1,105 @@
+@font-face {
+  src:url('../fonts/JosefinSans-Bold.ttf');
+  font-family: josefinBold
+}
+@font-face {
+  src: url('../fonts/Lato-Regular.ttf');
+  font-family: lastRegular
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: lastRegular;
+  font-weight: 400
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: josefinBold;
+  font-weight: 700
+}
+a{
+  text-decoration: none;
+  color:#fff;
+  text-transform: uppercase;
+  font-size: 15px
+}
+.swiper{
+  width: 100%;
+  height: 100vh;
+}
+.slide1{
+  background: url('../img/slide1.jpg') no-repeat center center / cover;
+}
+.slide2{
+  background: url('../img/slide2.jpg') no-repeat center center / cover;
+}
+.slide3{
+  background: url('../img/slide3.jpg') no-repeat center center / cover;
+}
+.swiper-slide{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color:#fff
+}
+.swiper-slide p{
+  text-transform: capitalize;
+  font-size: 19px
+}
+.swiper-slide h1{
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+.swiper-slide a{
+  display: inline-block;
+  width: 180px;
+  padding: 13px 0;
+  border-radius: 5px;
+  border:2px solid transparent;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.swiper-slide a.getbtn{
+  background: #E91E63;
+}
+.swiper-slide a.explorebtn{
+  border-color: #fff;
+}
+.swiper-slide a.getbtn:hover{
+  background: #F50057;
+}
+.swiper-slide a.explorebtn:hover{
+  background: rgba(255,255,255,0.3);
+}
+.swiper-button-next, .swiper-button-prev {
+  color:#fff;
+  opacity:0.8
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  color:#fff
+}
+@media screen and (max-width:1140px) {
+  .swiper-slide h1{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width:768px) {
+  .swiper-slide h1{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .swiper-slide p{
+    font-size: 16px;
+  }
+  .swiper .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+}
